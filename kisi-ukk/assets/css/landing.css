@@ -1,0 +1,155 @@
+*, body, html {
+    font-family: Arial, sans-serif; /* Mengatur jenis font umum untuk seluruh elemen, seperti teks dan paragraf */
+    margin: 0; /* Menghilangkan margin (jarak) default di sekitar elemen */
+    padding: 0; /* Menghilangkan padding (jarak dalam elemen) default di sekitar elemen */
+}
+
+body {
+    background-color: #222; /* Mengatur warna latar belakang halaman */
+}
+
+.container {
+    margin: 30px; /* Memberikan margin 50px di sekitar elemen dengan kelas "container" */
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.navbar-left {
+    display: flex;
+    float: left;
+}
+
+.navbar-left a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+}
+
+.navbar-left a:hover {
+    background-color: #444;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.navbar-right a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+}
+
+.navbar-right a:hover {
+    background-color: #444;
+}
+
+.image-banner{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.image-banner img{
+    border-radius: 10px;
+    width: 80%;
+}
+
+.daftar{
+    margin: 50px 0;
+}
+
+.daftar h1{
+    color: white;
+    font-size: 25px;
+}
+
+.paket{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-paket{
+    width: 20%;
+    height: 270px;
+    margin: 30px 0;
+    padding: 30px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+}
+
+.detail-paket img{
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+}
+
+.detail-paket label{
+    font-size: 20px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.detail-paket p{
+    margin: 25px 20px;
+    max-width: 240px;
+}
+
+
+.button-submit input{
+    border: 1px solid #000;
+    background-color: white;
+    color: #444;
+    font-weight: bold;
+    margin: 50px -29px;
+    width: 120%;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.button-submit input:hover{
+    transition: 0.3s ease-in;
+    background-color: #333;
+    color: white;
+}
+
+.footer{
+    background-color: #333;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 15px;
+}
+
+.isi-footer{
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    .image-banner img{
+        width: 100%;
+    }.paket{
+        flex-wrap: wrap;
+    }.card-paket{
+        width: 100%;
+        height: 300px;
+    }.button-submit input{
+        width: 122%;
+        height: 35px;
+    }.detail-paket img {
+        width: 100%;
+        height: 150px;
+    };
+    
+    
+}

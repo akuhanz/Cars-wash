@@ -1,0 +1,128 @@
+*, body, html {
+    font-family: Arial, sans-serif; /* Mengatur jenis font umum untuk seluruh elemen, seperti teks dan paragraf */
+    margin: 0; /* Menghilangkan margin (jarak) default di sekitar elemen */
+    padding: 0; /* Menghilangkan padding (jarak dalam elemen) default di sekitar elemen */
+}
+
+body {
+    background-color: #222; /* Mengatur warna latar belakang halaman */
+}
+
+.container {
+    margin: 50px; /* Memberikan margin 50px di sekitar elemen dengan kelas "container" */
+}
+
+.form {
+    display: flex; /* Mengubah tampilan elemen dengan kelas "form" menjadi tampilan flex (untuk penataan elemen dalam baris atau kolom) */
+    justify-content: center; /* Membuat konten dalam elemen "form" berada di tengah horizontal */
+    align-items: center; /* Membuat konten dalam elemen "form" berada di tengah vertikal */
+}
+
+.form img {
+    width: 150px; /* Mengatur lebar gambar dalam elemen dengan kelas "form" */
+    border-radius: 50%; /* Memberikan sudut melengkung pada gambar */
+}
+
+.penjelasan {
+    display: flex; /* Mengubah tampilan elemen dengan kelas "penjelasan" menjadi tampilan flex */
+    justify-content: center; /* Membuat konten dalam elemen "penjelasan" berada di tengah horizontal */
+    align-items: center; /* Membuat konten dalam elemen "penjelasan" berada di tengah vertikal */
+}
+
+.penjelasan h1 {
+    text-align: center; /* Membuat teks dalam elemen "h1" di tengah horizontal */
+    color: white; /* Mengatur warna teks menjadi putih */
+    font-size: 20px; /* Mengatur ukuran font */
+}
+
+.card-form {
+    display: flex; /* Mengubah tampilan elemen dengan kelas "card-form" menjadi tampilan flex */
+    justify-content: center; /* Membuat konten dalam elemen "card-form" berada di tengah horizontal */
+    align-items: center; /* Membuat konten dalam elemen "card-form" berada di tengah vertikal */
+    margin: 20px; /* Memberikan margin 20px di sekitar elemen dengan kelas "card-form" */
+}
+
+.card-form form {
+    background-color: white; /* Mengatur warna latar belakang elemen "form" */
+    width: 35%; /* Mengatur lebar elemen "form" */
+    padding: 20px; /* Memberikan padding 20px di dalam elemen "form" */
+    border-radius: 5px; /* Memberikan sudut melengkung pada elemen "form" */
+    color: black; /* Mengatur warna teks dalam elemen "form" */
+}
+
+.card-form label {
+    margin: 20px 0; /* Memberikan margin di atas dan bawah elemen "label" */
+    font-size: 20px; /* Mengatur ukuran font label */
+    font-weight: bold; /* Mengatur tebal (bold) pada teks label */
+}
+
+.card-form .input-data {
+    width: 95%; /* Mengatur lebar input data */
+    margin: 20px 0; /* Memberikan margin di atas dan bawah input data */
+    padding: 10px; /* Memberikan padding di dalam input data */
+    border-radius: 5px; /* Memberikan sudut melengkung pada input data */
+    border: 1px solid #222; /* Mengatur garis tepi dan warna garis input data */
+}
+
+.button-login {
+    display: flex; /* Mengubah tampilan elemen dengan kelas "button-login" menjadi tampilan flex */
+}
+
+.button-login button {
+    cursor: pointer;
+    background-color: brown; /* Mengatur warna latar belakang tombol */
+    margin: 20px 0; /* Memberikan margin di atas dan bawah tombol */
+    color: white; /* Mengatur warna teks tombol */
+    font-weight: bold; /* Mengatur tebal (bold) pada teks tombol */
+    border: 1px solid black; /* Mengatur garis tepi tombol dan warna garis */
+    border-radius: 5px; /* Memberikan sudut melengkung pada tombol */
+    width: 30%; /* Mengatur lebar tombol */
+    height: 40px; /* Mengatur tinggi tombol */
+    padding: 10px; /* Memberikan padding di dalam tombol */
+}
+
+.button-login .button-submit {
+    cursor: pointer; /* Mengubah ikon kursor saat mengarahkan ke tombol menjadi tanda tangan "pointer" */
+    background-color: green; /* Mengatur warna latar belakang tombol "Submit" */
+    margin: 20px; /* Memberikan margin di sekitar tombol "Submit" */
+    color: white; /* Mengatur warna teks tombol "Submit" */
+    font-weight: bold; /* Mengatur tebal (bold) pada teks tombol "Submit" */
+    border: 1px solid black; /* Mengatur garis tepi tombol "Submit" dan warna garis */
+    border-radius: 5px; /* Memberikan sudut melengkung pada tombol "Submit" */
+    width: 30%; /* Mengatur lebar tombol "Submit" */
+    height: 40px; /* Mengatur tinggi tombol "Submit" */
+    padding: 10px; /* Memberikan padding di dalam tombol "Submit" */
+}
+
+.button-login button:hover {
+    transition: 0.5s ease-in-out; /* Efek transisi saat mengarahkan kursor ke tombol */
+    background-color: rgb(121, 37, 37); /* Mengatur warna latar belakang tombol saat dihover */
+}
+
+.button-login .button-submit:hover {
+    transition: 0.5s ease-in; /* Efek transisi saat mengarahkan kursor ke tombol "Submit" */
+    background-color: rgb(8, 105, 8); /* Mengatur warna latar belakang tombol "Submit" saat dihover */
+}
+
+@media (max-width: 768px) {
+    .form img{
+        width: 40%;
+    }.penjelasan h1 {
+        text-align: center; 
+        color: white; 
+        font-size: 15px; 
+    }.card-form {
+        margin: 15px;
+    }.card-form form {
+        background-color: white; 
+        width: 100%; 
+        padding: 35px;
+        border-radius: 5px; 
+        color: black; 
+    }.button-login button {
+        width: 50%; 
+    }.button-login .button-submit {
+        width: 50%; 
+        
+    }
+  }
